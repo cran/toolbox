@@ -306,16 +306,29 @@ combineCols <- function(
       cols <- shQuote(cols)
     }
   }
-  if(parallel== FALSE){
+  if(parallel == FALSE){
     str <- paste0(
       "lapply(seq_len(", rows, "), function(i, l = x){return(c(", paste0("l[[", cols, "]][i]", collapse = ", "), "))})"
     )
   }else{
+    parallel::mclapply
     str <- paste0(
       "parallel::mclapply(seq_len(", rows, "), function(i, l = x){return(c(", paste0("l[[", cols, "]][i]", collapse = ", "), "))}, mc.cores = ", cores, ")"
     )
   }
   return(
     eval(str2expression(str))
+  )
+}
+
+#' Paste parts of file paths/urls separated with single forward-slashes
+#'
+#' @param ... Text strings to combine into a file path
+#' @return A string.
+#' @examples
+#' pastePaths("/home/", "/files")
+pastePaths <- function(...){
+  return(
+    gsub("/+", "/", paste0(c(...), collapse = "/"))
   )
 }

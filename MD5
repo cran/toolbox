@@ -1,6 +1,6 @@
-8376f361bf978cb405a84ab66a9ffa24 *DESCRIPTION
-d133a4ba760d331b61575f0419e27842 *NAMESPACE
-5bc5f03e08372a1a9669de60f454d0be *R/toolbox.R
+a762b870b62d996ca460e1f87f94f0a1 *DESCRIPTION
+e1dc77bf9afbe0cdd18ba2b57473bc98 *NAMESPACE
+10509ba3b2b95cc5380d26f9b94a02c2 *R/toolbox.R
 9a232831e53a53e0505ed37052b270ab *man/argNames.Rd
 f5ed24e6b73c5c5f699e5f17d8b042d2 *man/argumentNamedList.Rd
 a996b09da559b38c7950725be0c91784 *man/castDateString.Rd
@@ -15,5 +15,6 @@ f008b78f86cd92446c60f8dd3da88e41 *man/consolidateList.Rd
 f727e7ec9033b1f6d2b587c2e3e1b4bb *man/listExtract.Rd
 e0d8ef9a0eb3e7e44de12ca7649587f0 *man/namesToString.Rd
 2edc497b502cb023280c1f955557ecfd *man/pasteCols.Rd
+5ea276f08809e7358fec44f0def35d4f *man/pastePaths.Rd
 5d5e0b38b1127f42d7d5cc7d8d588e6b *man/quoteText.Rd
 275f4b56fb8ad9a17a1090c2aed9c8fd *man/sampleStr.Rd
